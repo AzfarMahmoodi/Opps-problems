@@ -1,0 +1,825 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #629755; font-style: italic;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">'''dict={} 
+n=int(input(&quot;enter the number of student&quot;)) 
+for i in range(n): 
+    key=input(&quot;enter name&quot;) 
+    value=input(&quot;enter number of win:&quot;) 
+    dict[key]=value 
+print(dict) 
+if &quot;azfar&quot; in dict: 
+    print(&quot;yes&quot;) 
+else: 
+    print(&quot;no&quot;) 
+n=int(input(&quot;enter the number&quot;)) 
+dict={} 
+for i in range(n): 
+    key=input(&quot;enter the key&quot;) 
+    value=input(&quot;enter the value&quot;) 
+    dict[key]=value 
+print(dict)'''</span>
+<span class="s2">'''import math 
+import os 
+ 
+import math 
+x = [9, 1, 12, 11, 0, 15, 8, 4, 2, 11, 11, 0, 6, 11, 15, 1, 15, 7, 11, 24, 6, 7, 2, 9, 8] 
+def skewData(x): 
+    N = len(x) 
+    X = sum(x) / N 
+    # logic to replicate list elements 
+    Xn = [X] * N 
+    print(Xn) 
+    # Element-wise substraction and squaring of list 
+    DiffPow2 = [round((x[i] - Xn[i]) ** 2, 2) for i in range(len(x))] 
+    # Element-wise substraction and power three of list 
+    DiffPow3 = [round((x[i] - Xn[i]) ** 3, 2) for i in range(len(x))] 
+    S = math.sqrt(sum(DiffPow2) / (N - 1)) 
+    skewVal = (sum(DiffPow3) / N) / (S ** 3) 
+    return round(skewVal, 2) 
+skew_res = skewData(x) 
+print(skew_res) 
+'''</span>
+<span class="s2">'''def great(a,b,c): 
+    if a&gt;b and a&gt;c: 
+        return (a) 
+    elif b&gt;a and b&gt;c: 
+        return(b) 
+    else: 
+        return(c) 
+m=great(5,6,3) 
+print(m) 
+def fah(c): 
+    f=(c*(9/5))+32 
+    return(f) 
+c=float(input(&quot;enter&quot;)) 
+a=fah(c) 
+print(a)'''</span>
+<span class="s2">'''def factorial_rec(n): 
+    product=1 
+    for i in range(n): 
+        product=product*(i+1) 
+    return product'''</span>
+<span class="s2">'''def sum_d(n): 
+    if n&lt;=1: 
+        return n 
+    else: 
+        s=sum_d(n-1)+n 
+        return s 
+f=sum_d(2) 
+print(f)'''</span>
+<span class="s2">'''n=3 
+for i in range(n): 
+    print((n-i)*&quot; * &quot;)'''</span>
+<span class="s2">'''def cms(a): 
+    b=a*2.54 
+    return b 
+n=float(input(&quot;enter the inches&quot;)) 
+f=cms(n) 
+print(f)'''</span>
+<span class="s2">'''def rem(a,b): 
+    newstr=a.replace(b,&quot;&quot;) 
+    return newstr.strip() 
+str=&quot;      aakash is good boy he have a bueatiful girlfriend named nishi she blocked him because he ask her for kiss&quot; 
+n=rem(str,&quot;aakash&quot;) 
+print(n)'''</span>
+<span class="s2">'''def multiply(n): 
+    for i in range(1,11): 
+        print(a,&quot;x&quot;,i,&quot; = &quot;,a*i) 
+a=int(input(&quot;enter the value&quot;)) 
+b=multiply(a) 
+print(b)'''</span>
+
+
+
+<span class="s2">'''a=input(&quot;enetr the value&quot;) 
+if (a[0:3]).isdigit() and a[3]==&quot;-&quot; and (a[4:7]).isdigit() and a[7]==&quot;-&quot; and (a[8:12]): 
+    print(&quot;valid&quot;) 
+else: 
+    print(&quot;not valid&quot;)'''</span>
+
+<span class="s2">'''a=input(&quot;eneter the element&quot;) 
+b=a.split() 
+count=0 
+sum=0 
+for i in b: 
+    if i.isalpha() or i==&quot; &quot;: 
+        count=count+1 
+        print(&quot;the number of character&quot;,count) 
+    elif i.isdigit(): 
+        sum=sum+1 
+        print(sum)'''</span>
+<span class="s2">'''l=[3,1,4] 
+m=[1,5,9] 
+k=[] 
+for i in l: 
+    a=l[i] 
+    for j in m: 
+        b=m[j] 
+ 
+        c=a+b 
+        k.append(c) 
+        print(k)'''</span>
+
+<span class="s2">'''l=[1,2,4,5] 
+a=l[-1:]+l[:-1] 
+print(a)'''</span>
+
+<span class="s2">'''def maxi(a): 
+    max=len(l[0]) 
+    temp=l[0] 
+    for i in l: 
+         if (len(i)&gt;max): 
+            max=len(i) 
+            temp=i 
+    print(max) 
+l=[&quot;azfar&quot;,&quot;sa&quot;,&quot;sed&quot;,&quot;ukjb&quot;] 
+maxi(l)'''</span>
+
+<span class="s2">'''list1=list(range(1,101)) 
+print(list1) 
+list2=[] 
+for i in list1: 
+    if (i%3==0) or (i%5==0): 
+        list2.append(i) 
+print(list2)'''</span>
+
+<span class="s2">'''a=&quot;johny&quot; 
+b=&quot;jimmy&quot; 
+temp=a 
+a=b 
+b=temp 
+print(&quot;A&quot;,a) 
+print(&quot;B&quot;,b)'''</span>
+
+<span class="s2">'''def fibo(n): 
+    a=0 
+    b=1 
+    if n==1: 
+        print(a) 
+    else: 
+        print(a) 
+        print(b) 
+        for i in range(2,n): 
+            c=a+b 
+            a=b 
+            b=c 
+            print(c) 
+d=int(input(&quot;enter the value&quot;)) 
+fibo(d) 
+'''</span>
+
+<span class="s2">'''def fibo(n): 
+    if(n&lt;=1): 
+        return n 
+    else: 
+        return (fibo(n-1)+fibo(n-2)) 
+n=int(input()) 
+for i in range(n): 
+    print(fibo(i))'''</span>
+
+<span class="s2">'''dict={} 
+n=int(input(&quot;enter the value&quot;)) 
+for i in range(n): 
+    key=input(&quot;enter the month name&quot;) 
+    value=int(input(&quot;enter the days in it&quot;)) 
+    dict[key]=value 
+print(dict) 
+dict1=sorted(dict.keys()) 
+print(&quot;sorted name:&quot;,dict1) 
+for i in dict.values(): 
+    if i==31: 
+        print(&quot;the 31 day&quot;,i) 
+dict2=sorted(dict.values()) 
+print(&quot;sorted days:&quot;,dict2) 
+ 
+def conversion(n): 
+    rupee=n*74 
+    return rupee 
+n=int(input(&quot;enter the money in dollar&quot;)) 
+f=conversion(n) 
+print(f)'''</span>
+
+<span class="s2">'''def volume(l,b,h): 
+    vol=l*b*h 
+    return vol 
+num1=float(input(&quot;enter the length&quot;)) 
+num2=float(input(&quot;enter the breadth&quot;)) 
+num3=float(input(&quot;enter the height&quot;)) 
+d=volume(num1,num2,num3) 
+print(f&quot;the volume obtained of dimension {num1},{num2},{num3} is : &quot;,d)'''</span>
+
+<span class="s2">'''import random 
+ 
+l=[] 
+n=int(input(&quot;e&quot;)) 
+for i in range(n): 
+    l.append(random.randint(2,6)) 
+ 
+print(l)'''</span>
+
+<span class="s2">'''def fun(n=2): 
+    s=n**3 
+    print(s) 
+def func(a,b): 
+    if (a==b): 
+        return True 
+    else: 
+        return False 
+fun() 
+print(func(3,5))'''</span>
+
+<span class="s2">'''def strings(a,b): 
+    if len(a)==len(b): 
+        return True 
+    else: 
+        return False 
+str1=input(&quot;enter 1&quot;) 
+str2=input(&quot;enter2&quot;) 
+print(strings(str1,str2))'''</span>
+
+<span class="s2">'''import random 
+l=[] 
+n=int(input(&quot;enetr the value&quot;)) 
+for i in range(n): 
+    l.append(random.randint(0,9)) 
+print(l) 
+if l[0]==0: 
+    print(&quot;invalid&quot;) 
+else: 
+    print(&quot;vallid&quot;)'''</span>
+
+<span class="s2">'''def func(a,b,c): 
+    d=(b-a)/(c+1) 
+    return [a,a+d,a+2*d,a+3*d,b] 
+a=int(input(&quot;enetr the value&quot;)) 
+b= int(input(&quot;enetr&quot;)) 
+c=int(input(&quot;enetr teh divide&quot;)) 
+print(func(a,b,c))'''</span>
+
+<span class="s2">'''list=[0,2,5,0] 
+list[1],list[2]=list[2],list[1] 
+print(list)'''</span>
+
+<span class="s2">'''unsortedData = [9,1,12,11,0,15,8,4,2,11,11,0,6,11,15,1,15,7,11,24,6,7,2,9,8] 
+for j in range(len(unsortedData)-1,0,-1): 
+    for i in range(j): 
+        if unsortedData[i]&gt;unsortedData[i+1]: 
+            unsortedData[i],unsortedData[i+1]=unsortedData[i+1],unsortedData[i] 
+print(unsortedData)'''</span>
+
+<span class="s2">'''dict={&quot;key1&quot;:10,&quot;key2&quot;:20,&quot;key3&quot;:30,&quot;key4&quot;:40} 
+list=[dict[i] for i in dict] 
+print(list)'''</span>
+<span class="s2">'''dict={&quot;key1&quot;:10,&quot;key2&quot;:20,&quot;key3&quot;:30,&quot;key4&quot;:40} 
+print(dict[&quot;key1&quot;])'''</span>
+
+<span class="s2">'''total=0 
+def sum(ar1,ar2): 
+    total=ar1+ar2 
+    print(&quot;toal&quot;,total) 
+    return total 
+sum(10,20) 
+print(&quot;total&quot;,total)'''</span>
+<span class="s2">'''n=1 
+ 
+def fun(): 
+    global n 
+    n=10 
+    return n 
+print(n) 
+print(fun()) 
+print(n)'''</span>
+<span class="s2">''' 
+def mul(n1,n2): 
+    answer=n1*n2 
+     
+    return(answer) 
+ 
+o=mul(5,5)'''</span>
+<span class="s2">'''def oct(n): 
+    print(n) 
+    new=str(n) 
+    dec=int(new,8) 
+    print(&quot;decimal&quot;,dec) 
+    print(&quot;binary&quot;,bin(dec)) 
+    print(&quot;hex&quot;,hex(dec)) 
+n=int(input(&quot;e&quot;)) 
+oct(n)'''</span>
+
+
+<span class="s2">'''def is_leap(year): 
+    leap = False 
+    if year % 4 == 0 and year % 100 == 0 and year % 400 == 0: 
+        leap = True 
+ 
+    # Write your logic here 
+ 
+    return leap 
+ 
+ 
+year = int(input()) 
+print(is_leap(year))'''</span>
+<span class="s2">'''n=int(input()) 
+l=[] 
+for i in range(n): 
+    num=int(input(&quot;e&quot;)) 
+    l.append(num) 
+l.sort() 
+print(l[-2])'''</span>
+
+<span class="s2">'''class TelevisionWatch: 
+    watchType=&quot;CARTOON&quot; 
+    def printdata(self): 
+        print(f&quot;NAME IS{self.name}&quot;) 
+        print(f&quot;CHANNEL IS{self.channel}&quot;) 
+harryApplication=TelevisionWatch() 
+harryApplication.name=&quot;     maryam&quot; 
+harryApplication.channel=&quot;    disney xD&quot; 
+harryApplication.printdata()'''</span>
+
+
+<span class="s2">''' 
+x_data=[] 
+y_data=[] 
+for i in range(25): 
+    a=int(input(&quot;enter the ve&quot;)) 
+    x_data.append(a) 
+for i in range(25): 
+    a=int(input(&quot;enter the elt&quot;)) 
+    y_data.append(a) 
+def Avg(Data): 
+    mean=sum(Data)/25 
+    return mean 
+def slope(x,y,x_data,y_data): 
+    for i in range(25): 
+        numerator=(x_data[i]-x)*(y_data[i]-y) 
+        demonator=(x_data[i]-x)**2 
+    slope=float(numerator/demonator) 
+    return slope 
+x_mean=Avg(x_data) 
+y_mean=Avg(y_data) 
+s=slope(x_mean,y_mean,x_data,y_data) 
+print(s)'''</span>
+<span class="s2">'''def str1(sttt): 
+    str='' 
+    for i in sttt: 
+        str=i+str 
+    return str 
+a='1234abcd' 
+f=str1(a) 
+print(f)'''</span>
+<span class="s2">'''dict={'a':1,'b':3,'c':2,'d':0} 
+print(sorted(dict.values()),dict.keys()) 
+'''</span>
+<span class="s2">''' 
+x_value=[] 
+y_value=[] 
+for i in range(25): 
+    a=int(input(&quot;enter the element&quot;)) 
+    x_value.append(a) 
+for i in range(25): 
+    a=int(input(&quot;enter the element&quot;)) 
+    y_value.append(a) 
+def avg(value): 
+    mean=sum(value)/25 
+    return mean 
+def slope(x,y,x_value,y_value): 
+    for i in range(25): 
+        numerator=(x_value[i]-x)*(y_value[i]-y) 
+        deminotor=(x_value[i]-x)**2 
+    slope=float(numerator/deminotor) 
+     
+    return slope 
+ 
+x_mean=avg(x_value) 
+y_mean=avg(y_value) 
+s=slope(x_mean,y_mean,x_value,y_value) 
+print(s)'''</span>
+<span class="s2">''' 
+dict={'a':1,'b':3,'c':2,'d':0} 
+dict1={'f':5,'h':8} 
+dict1.update(dict) 
+print(dict1)'''</span>
+<span class="s2">''' 
+my_dict = {1:'100',2:'-54',3:'27'} 
+my_dict.pop(3) 
+print(my_dict)'''</span>
+<span class="s2">'''Tv = {'BreakingBad': 100, 'GameOfThrones': 1292, 'TMKUC': 88} 
+ 
+Keymax = max(zip(Tv.values(), Tv.keys())) 
+print(Keymax)'''</span>
+<span class="s2">&quot;&quot;&quot;d={1:2} 
+if len(d)==0: 
+    print(&quot;empty&quot;) 
+else: 
+    print(&quot;filled&quot;)&quot;&quot;&quot;</span>
+<span class="s2">'''student_data = {'id1': 
+   {'name': ['Sara'], 
+    'class': ['V'], 
+    'subject_integration': ['english, math, science'] 
+   }, 
+ 'id2': 
+  {'name': ['David'], 
+    'class': ['V'], 
+    'subject_integration': ['english, math, science'] 
+   }, 
+ 'id3': 
+    {'name': ['Sara'], 
+    'class': ['V'], 
+    'subject_integration': ['english, math, science'] 
+   }, 
+ 'id4': 
+   {'name': ['Surya'], 
+    'class': ['V'], 
+    'subject_integration': ['english, math, science'] 
+   }, 
+} 
+res={} 
+for key,value in student_data.items(): 
+    if value not in res.values(): 
+        res[key]=value 
+print(res)'''</span>
+<span class="s2">'''from collections import counter 
+d1 = {'a': 100, 'b': 200, 'c':300} 
+d2 = {'a': 300, 'b': 200, 'd':400} 
+d=counter(d1)+counter(d2) 
+print(d) 
+'''''' 
+dict1 = {1: [&quot;Samuel&quot;, 21, 'Data Structures'], 
+     2: [&quot;Richie&quot;, 20, 'Machine Learning'], 
+     3: [&quot;Lauren&quot;, 21, 'OOPS with java'], 
+     } 
+print(&quot;{:10}{:10}{:10}&quot;.format('name', 'age', 'course')) 
+for key, value in dict1.items(): 
+    name, age, course = value 
+    print (&quot;{:&lt;10}{:&lt;10}{:&lt;10}&quot;.format(name, age, course))'''</span>
+
+<span class="s2">'''test_dict = {'gfg' : 1, 'is' : 2, 'best' : 3, 'for' : 2, 'CS' : 2} 
+print(&quot;test_dict&quot;,str(test_dict)) 
+res=0 
+for i in test_dict: 
+    if test_dict[i]==2: 
+        res=res+1 
+print(&quot;test_dict&quot;,str(res))'''</span>
+<span class="s2">'''test_dict = {'gfg' : 1, 'is' : 2, 'best' : 3, 'for' : 2, 'CS' : 2} 
+print(&quot;test_dict&quot;,str(test_dict)) 
+print(sum(i==2 for i in test_dict.values()))'''</span>
+<span class="s2">'''test_list1 = [&quot;gfg&quot;, 'is', 'best'] 
+test_list2 = ['ratings', 'price', 'score'] 
+test_list3 = [5, 6, 7] 
+res=[{a:{b:c}} for (a,b,c) in zip(test_list1,test_list2,test_list3)] 
+print(res) 
+'''</span>
+<span class="s3"># Write a Python program to sort a list alphabetically in a dictionary.</span>
+<span class="s2">'''num = {'n1': [2, 3, 1], 'n4': [5, 1, 2], 'n3': [3, 2, 4]} 
+sorted_data=sorted_dict={x:sorted(y) for x,y in num.items()} 
+print(sorted_data)'''</span>
+<span class="s2">'''Product_list = {'P 01' : 'DBMS', 'P 02' : 'OS',  'P 0 3 ': 'Soft Computing'} 
+product={x.replace(&quot; &quot;,&quot;&quot;):y for x,y in Product_list.items()} 
+print(product) 
+'''</span>
+<span class="s2">'''dict_num = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} 
+print(&quot;        {:10}{:10}&quot;.format(&quot;key&quot;,&quot;values&quot;)) 
+for key,value in dict_num.items(): 
+    print(&quot;{:10}{:10}&quot;.format(key,value))'''</span>
+<span class="s2">'''students = {'Aex':{'class':'V', 
+        'rolld_id':2}, 
+        'Puja':{'class':'V', 
+        'roll_id':3}} 
+for i in students: 
+    print(i) 
+    for j in students[i]: 
+        print(j,&quot;:&quot;,students[i][j]) 
+'''</span>
+<span class="s2">'''student = { 
+  'name': 'Alex', 
+  'class': 'V', 
+  'roll_id': '2' 
+} 
+print(student.keys() &gt;= {'class', 'name'}) 
+print(student.keys() &gt;= {'name', 'Alex'}) 
+print(student.keys() &gt;= {'roll_id', 'name'})'''</span>
+<span class="s2">'''dict =  {'Alex': ['subj1', 'subj2', 'subj3'], 'David': ['subj1', 'subj2']} 
+print(sum(map(len,dict.values()))) 
+'''</span>
+<span class="s2">'''a=2&lt;&lt;2 
+print(a)'''</span>
+<span class="s2">'''a=-43.01 
+b=math.floor(a) 
+print(b) 
+print(abs(b))'''</span>
+<span class="s2">'''import math 
+c=5+2j 
+b=c.real 
+print(b) 
+print(abs(c))'''</span>
+<span class="s2">'''def recur_sum(n): 
+    if n&lt;=1: 
+        return n 
+    else: 
+        return n+recur_sum(n-1) 
+print(recur_sum(100))'''</span>
+<span class="s2">''' 
+name=input(&quot;enter the name&quot;) 
+pan_num=input(&quot;enter the pan number&quot;) 
+mob_num=input(&quot;enter the mobile phone number&quot;) 
+if name.isalpha(): 
+    if pan_num[0:5].isalpha(): 
+        if pan_num[5:9].isnumeric() and pan_num[-1].isalpha(): 
+            if len(mob_num)==13 and mob_num[0:3]==&quot;+91&quot;: 
+                print(&quot;valid&quot;) 
+            else: 
+                print(&quot;mob number is invalid&quot;) 
+        else: 
+            print(&quot;pancard is invalid&quot;) 
+    else: 
+        print(&quot;pancard is invalid&quot;) 
+else: 
+    print(&quot;name is invalid&quot;) 
+'''</span>
+<span class="s2">'''y=ord('a')+1 
+print(chr(y))'''</span>
+<span class="s2">'''s='Welcome to Python Course' 
+l=[] 
+for i in s: 
+    l.append(i) 
+print(l,end=&quot;,&quot;) 
+'''</span>
+<span class="s2">'''s='Welcome to Python Course' 
+print([i for i in s]) 
+'''</span>
+<span class="s2">'''s1,s2=('cellphone','phone') 
+if s2 in s1: 
+    a=s1.find(s2) 
+    b=a-1 
+    if b%3==0: 
+        print(&quot;-2&quot;) 
+    else: 
+        print(b) 
+else: 
+    print(&quot;Not available&quot;)'''</span>
+<span class="s2">'''x=int(input(&quot;eneter the numberb of heaad&quot;)) 
+y=int(input(&quot;eneter the number of legs&quot;)) 
+r=int((y-2*x)/2) 
+c=int(x-r) 
+print(&quot;number of rabbit:&quot;,c) 
+print(&quot;number of rabbit:&quot;,r) 
+'''</span>
+<span class="s2">'''dict={'siva':40,'kumar':60,'arun':80} 
+key=list(dict.keys()) 
+val=list(dict.values()) 
+for i in val: 
+    mean=sum(val)/len(val) 
+    if mean==i: 
+        position=val.index(i) 
+        print(key[position]) 
+for i in val: 
+    mean = sum(val) / len(val) 
+    if mean&lt;i: 
+        position=val.index(i) 
+        print(key[position]) 
+for i in val: 
+    mean = sum(val) / len(val) 
+    if mean&gt;i: 
+        position = val.index(i) 
+        print(key[position]) 
+'''</span>
+<span class="s2">'''import re 
+s=&quot;position by a&quot; 
+x=re.findall(&quot;[p-z]&quot;,s) 
+print(x)'''</span>
+<span class="s2">'''import re 
+s=&quot;Python Programming Welcome You 4&quot; 
+x=re.findall('4\Z',s) 
+print(x)'''</span>
+<span class="s2">'''data={'Amuthan':[80,85,87,84,91],'Kamala':[89,95,89,88,81],'Vipin':[87,86,81,83,80]} 
+print(&quot;{:}{:}{:}&quot;.format('amuthan  ','  kamala  ','  vipin')) 
+print([i[2] for i in data.values()]) 
+'''</span>
+<span class="s2">'''i=2 
+j=5 
+min_val=i&lt;j and i or j 
+print(min_val)'''</span>
+<span class="s2">'''def avg_dict(lisst): 
+    for i in lisst: 
+        n1=i.pop(&quot;V&quot;) 
+        n2=i.pop(&quot;VI&quot;) 
+        i['avgerge(V+VI)']=(n1+n2)/2 
+        return lisst 
+student_details = [{'id': 1, 'subject': 'math', 'V': 70, 'VI': 82}, 
+{'id': 2, 'subject': 'math', 'V': 73, 'VI': 74}, 
+{'id': 3, 'subject': 'math', 'V': 75, 'VI': 86}] 
+print(avg_dict(student_details))'''</span>
+<span class="s2">'''a={'key1': 1, 'key2': 3, 'key3': 2} 
+b={'key1': 1, 'key2': 2} 
+for (key,value)in a.items() &amp; b.items(): 
+    print(key,':',value)'''</span>
+<span class="s2">'''d = {&quot;students&quot;: [{&quot;firstName&quot;: &quot;Nikki&quot;, &quot;lastName&quot;: &quot;Roysden&quot;}, 
+                  {&quot;firstName&quot;: &quot;Mervin&quot;, &quot;lastName&quot;: &quot;Friedland&quot;}, 
+                  {&quot;firstName&quot;: &quot;Aron &quot;, &quot;lastName&quot;: &quot;Wilkins&quot;}], 
+     &quot;teachers&quot;: [{&quot;firstName&quot;: &quot;Amberly&quot;, &quot;lastName&quot;: &quot;Calico&quot;}, 
+                  {&quot;firstName&quot;: &quot;Regine&quot;, &quot;lastName&quot;: &quot;Agtarap&quot;}]} 
+print(&quot;Original dictionary:&quot;) 
+print(d) 
+print(type(d)) 
+import json 
+ 
+with open(&quot;dictionary&quot;, &quot;w&quot;) as f: 
+    json.dump(d, f, indent=4, sort_keys=True) 
+ 
+print(&quot;</span><span class="s4">\n</span><span class="s2">Json file to dictionary:&quot;) 
+with open('dictionary') as f: 
+    data = json.load(f) 
+print(data)'''</span>
+<span class="s2">'''dict={'x': [11, 12, 13, 14, 15, 16, 17, 18, 19], 
+'y': [21, 22, 23, 24, 25, 26, 27, 28, 29], 
+'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]} 
+print([i[4]for i in dict.values()])'''</span>
+<span class="s2">'''dict={'x': [11, 12, 13, 14, 15, 16, 17, 18, 19], 
+'y': [21, 22, 23, 24, 25, 26, 27, 28, 29], 
+'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]} 
+print(&quot;original dict&quot;,dict) 
+print(dict[&quot;x&quot;][4]) 
+print(dict[&quot;y&quot;][4]) 
+print(dict[&quot;z&quot;][4]) 
+for key,value in dict.items(): 
+    print(key,&quot;has value&quot;,value)'''</span>
+<span class="s2">'''st=&quot;Hello World&quot; 
+st1=st.split(' ') 
+d={} 
+d1={} 
+for word in st1: 
+    for char in word: 
+        c=0 
+        for n in word: 
+            if char==n: 
+                c+=1 
+        d1[char]=c 
+    d[word]=d1 
+    d1={} 
+print(d) 
+'''</span>
+<span class="s2">'''S=&quot;Welcome Python&quot; 
+S=(S[0:7]+' to '+S[8:]+' Language') 
+print(S)'''</span>
+<span class="s2">'''test1={&quot;akhat&quot;:21,&quot;nikhil&quot;:22,&quot;akash&quot;:23,&quot;manjeet&quot;:27} 
+value_rem=23 
+for key in test1.keys(): 
+    if test1[key]==value_rem: 
+        test1.pop(key) 
+        break 
+print(str(test1)) 
+tup=('phy','chem',1997,2000) 
+print(tup) 
+del tup 
+print('after')'''</span>
+<span class="s2">'''dict={'name':'zara','age':7,'class':'first'} 
+print(&quot;dict['name']:&quot;,dict['name']) 
+'''</span>
+<span class="s2">'''n=int(input(&quot;enter the number of country&quot;)) 
+d={} 
+l=[] 
+for i in range(n): 
+    key=input(&quot;enter the country name&quot;) 
+    for j in range(2): 
+        value=input(&quot;enter the capital and currency&quot;) 
+        d[key]=value 
+search=input(&quot;enetr the country name to be search&quot;) 
+if search in d.keys(): 
+    print(search) 
+    for i in d.values(): 
+        print(i) 
+else: 
+    print(&quot;not founded&quot;) 
+'''</span>
+<span class="s2">'''s=(3,7) 
+d=(4,8) 
+l=[] 
+for i in s: 
+    for j in d: 
+        a=(i,j) 
+        l.append(a) 
+for i in s: 
+    for j in d: 
+        b=(j,i) 
+        l.append(b) 
+print(&quot;The resultant tuple:&quot;,l) 
+'''</span>
+<span class="s2">'''def fact(x): 
+    if x==0: 
+        return 1 
+    else: 
+        return x*fact(x-1) 
+def factp(x): 
+    if x==0: 
+        return 1 
+    else: 
+        return x*fact(x-1) 
+value=fact(25) 
+value1=factp(23) 
+handshake=value/(value1*2) 
+print(handshake)'''</span>
+<span class="s2">'''s=input() 
+out=chr(ord(s)+1) 
+print(out)'''</span>
+<span class="s2">'''import re 
+data=input() 
+x=re.findall(&quot;[a-m][R-Y]&quot;,data) 
+if x: 
+    print(&quot;matched&quot;)'''</span>
+<span class="s2">'''x=1.06446 
+print(&quot;%.3f&quot;%x)'''</span>
+<span class="s2">'''d={} 
+l1=[] 
+for i in range(2): 
+    key=input('enetr the key') 
+    for j in range(5): 
+        value=input(&quot;eneyter the value&quot;) 
+        l1.append(value) 
+    d[key]=list(l1) 
+print(d)'''</span>
+<span class="s2">'''str = &quot;Hello World&quot; 
+ 
+d = {} 
+ 
+for i in str: 
+    if i.isalpha(): 
+        if i in d: 
+            d[i] += 1 
+        else: 
+            d[i] = 1 
+ 
+print(d)'''</span>
+<span class="s2">'''def mean(data,N): 
+    X=sum(data)/N 
+    return X 
+ 
+def sd(data,N): 
+    X= mean(data,N) 
+    sum=0 
+    for x in data: 
+        sum+=(x-X)**2 
+    sd=(sum/N)**0.5 
+    return sd 
+'''</span>
+<span class="s2">'''def skewness(data,N): 
+    X=mean(data,N) 
+    sum=0 
+    for x in data: 
+        sum+=((x-X)**3)/N 
+ 
+    S= sd(data, N) 
+    skewness= sum/(S**3) 
+    return round(skewness,2) 
+ 
+data=[9,1,12,11,0,15,8,4,2,11,11,0,6,11,15,1,15,7,11,24,6,7,2,9,8] 
+N=25 
+print(skewness(data, N))'''</span>
+<span class="s2">'''str = &quot;Hello World&quot; 
+d = {} 
+for i in str: 
+    if i.isalpha(): 
+        if i in d: 
+            d[i] += 1 
+        else: 
+            d[i] = 1 
+print(d)'''</span>
+<span class="s4">import </span><span class="s1">math</span>
+
+<span class="s1">x = [</span><span class="s5">9</span><span class="s4">, </span><span class="s5">1</span><span class="s4">, </span><span class="s5">12</span><span class="s4">, </span><span class="s5">11</span><span class="s4">, </span><span class="s5">0</span><span class="s4">, </span><span class="s5">15</span><span class="s4">, </span><span class="s5">8</span><span class="s4">, </span><span class="s5">4</span><span class="s4">, </span><span class="s5">2</span><span class="s4">, </span><span class="s5">11</span><span class="s4">, </span><span class="s5">11</span><span class="s4">, </span><span class="s5">0</span><span class="s4">, </span><span class="s5">6</span><span class="s4">, </span><span class="s5">11</span><span class="s4">, </span><span class="s5">15</span><span class="s4">, </span><span class="s5">1</span><span class="s4">, </span><span class="s5">15</span><span class="s4">, </span><span class="s5">7</span><span class="s4">, </span><span class="s5">11</span><span class="s4">, </span><span class="s5">24</span><span class="s4">, </span><span class="s5">6</span><span class="s4">, </span><span class="s5">7</span><span class="s4">, </span><span class="s5">2</span><span class="s4">, </span><span class="s5">9</span><span class="s4">, </span><span class="s5">8</span><span class="s1">]</span>
+
+
+<span class="s4">def </span><span class="s1">skewData(x):</span>
+    <span class="s1">N = len(x)</span>
+    <span class="s1">X = sum(x) / N</span>
+    <span class="s3"># logic to replicate list elements</span>
+    <span class="s1">Xn = [X] * N</span>
+
+    <span class="s3"># Element-wise substraction and squaring of list</span>
+    <span class="s1">DiffPow2 = [round((x[i] - Xn[i]) ** </span><span class="s5">2</span><span class="s4">, </span><span class="s5">2</span><span class="s1">) </span><span class="s4">for </span><span class="s1">i </span><span class="s4">in </span><span class="s1">range(len(x))]</span>
+    <span class="s3"># Element-wise substraction and power three of list</span>
+    <span class="s1">DiffPow3 = [round((x[i] - Xn[i]) ** </span><span class="s5">3</span><span class="s4">, </span><span class="s5">2</span><span class="s1">) </span><span class="s4">for </span><span class="s1">i </span><span class="s4">in </span><span class="s1">range(len(x))]</span>
+    <span class="s1">S = math.sqrt(sum(DiffPow2) / (N - </span><span class="s5">1</span><span class="s1">))</span>
+    <span class="s1">skewVal = (sum(DiffPow3) / N) / (S ** </span><span class="s5">3</span><span class="s1">)</span>
+    <span class="s4">return </span><span class="s1">round(skewVal</span><span class="s4">, </span><span class="s5">2</span><span class="s1">)</span>
+<span class="s1">skew_res = skewData(x)</span>
+<span class="s1">print(skew_res)</span></pre>
+</body>
+</html>
